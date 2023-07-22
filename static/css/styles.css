@@ -414,42 +414,129 @@ footer{
 .navbar-links.active {
     display: block;
 }
-@media (max-width:1200px){
-    html{
-        font-size: 55%;
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: var(--second-bg-color);
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      width: 100%;
     }
-@media (max-width: 768px){
-   
+  
+    .navbar-links.active {
+      display: flex;
     }
-    .menu-row{
-        flex-wrap: wrap;
-        padding: 0 10px 0 10px ;
+    .navbar-links ul{
+      width: 100%;
+      flex-direction: column;
     }
-   .toggle-button{
-    display: flex;
-   }
-   .navbar-links{
-   display: none;
-   width: 100%;
+  
+    .navbar-links li {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  
+    .toggle-button {
+      display: flex;
+    }
+  
+    .heading {
+      flex-direction: column;
+      padding-top: 40px;
+    }
+  
+    .right {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .right::before {
+      width: 290px;
+      height: 290px;
+      padding: 8px;
+    }
+  
+    .left h1 {
+      font-size: 60px;
+    }
+  
+    .left p {
+      font-size: 20px;
+    }
   }
-  header{
-    flex-direction: column;
-    align-items: flex-start;
+  
+  /* Tablet devices */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .toggle-button {
+      display: flex;
+    }
+  
+    .heading {
+      padding-top: 50px;
+    }
+  
+    .right {
+      width: 400px;
+      height: 400px;
+    }
+  
+    .right::before {
+      width: 390px;
+      height: 390px;
+      padding: 9px;
+    }
+  
+    .left h1 {
+      font-size: 70px;
+    }
+  
+    .left p {
+      font-size: 25px;
+    }
   }
-  .navbar-links ul{
-    width: 100%;
-    flex-direction: column;
+  
+  /* Large desktops */
+  @media screen and (min-width: 1200px) {
+    .toggle-button {
+      display: none;
+    }
+  
+    .navbar-links {
+      display: flex;
+    }
+  
+    .heading {
+      padding-top: 65px;
+    }
+  
+    .right {
+      width: 440px;
+      height: 440px;
+    }
+  
+    .right::before {
+      width: 430px;
+      height: 430px;
+      padding: 10px;
+    }
+  
+    .left h1 {
+      font-size: 90px;
+    }
+  
+    .left p {
+      font-size: 30px;
+    }
+  
+    .socialMedia {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 150px;
+      height: 40px;
+    }
   }
-  .navbar-links li{
-    text-align:center ;
-  }
-  .navbar-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: var(--main-color);
-  }
-}
+  
