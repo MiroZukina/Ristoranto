@@ -22,7 +22,7 @@
 body{
     width: 99%;
     height: 97%;
-    background-color:var(--bg-color) ;
+    background-color:white ;
 }
 header{
     display: flex;
