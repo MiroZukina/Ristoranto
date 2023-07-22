@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block main %}
+    <section class="contact" id="contact">
+
+<h2 class="heading">Contact <span>Me!</span></h2>
+
+<form  id="form" action="#">
+  <div class="input-box">
+    <div class="input-field">
+        <input type="text" id="name" placeholder="Name">
+        <div class="error" style="color: brown;"></div>
+        <span class="focus"></span>
+    </div>
+    <div class="input-field">
+        <input type="text" id="secondName"  placeholder="Sacond Name" >
+        <div class="error" style="color: brown;"></div>
+        <span class="focus"></span>
+    </div>
+    <div class="input-field">
+        <input type="text" id="email"  placeholder="Email Address" >
+        <div class="error" style="color: brown;"></div>
+        <span class="focus"></span>
+    </div>
+    <div class="input-field">
+        <input type="number" id="number" placeholder="Mobile Number" >
+        <div class="error" style="color: brown;"></div>
+        <span class="focus"></span>
+    </div>  
+  </div>
+  <div class="textarea-field">
+  <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+  <div class="error" style="color: brown;"></div>
+  <span class="focus"></span>
+ </div>
+ <div class="btn-box btns">
+   <button type="submit" class="btn">Submit</button>
+ </div>  
+</form>
+<div id="output"></div>
+</section>   
+{% endblock %}

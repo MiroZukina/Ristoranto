@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block main %}
+    <section class="heading">
+        <div class="left">
+            <p>Are you Hungry?</p>
+            <h1>Don't Wait</h1>
+            <p>Let's start ordering food now</p>
+            <a href="{{ url_for('food_menu') }}"> <button>Check out Menu</button></a>
+        </div>
+        <div class="right" id="food"></div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/search/top?q=ristiranto" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Dhr" target="_blank" ><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+        </div>
+    </section>
+    <section class="botton">
+        <div class="menu">
+        <div id="food1"></div>
+        <div id="food2"></div>
+      </div>
+    </section>
+    {% endblock %}
