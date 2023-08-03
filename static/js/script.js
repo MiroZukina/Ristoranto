@@ -1,4 +1,4 @@
- // Active navbar
+ // navbar
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
-
+//  change image
 
 const food1s = document.getElementById('food1');
 const food2s = document.getElementById('food2');
@@ -55,7 +55,7 @@ if (form1) {
     });
 }
 
-
+// contact form
 
 const form = document.getElementById('form');
 const username = document.getElementById('name');
